@@ -1,0 +1,22 @@
+6017_info:
+  - index: "6017udp_0"
+    ip: '127.0.0.1'
+    port: 2111
+    send_interval: 10  # 设备发送间隔，一定要匹配，和数据解析有关，单位ms
+    save_natural_data: true #是否保存原始数据
+    channel_link_info: # channel : 0 - 7 总共8个通道 
+      - channel: 7
+        link_info: 'spot_0x'
+      - channel: 4
+        link_info: 'press0'
+  - index: "6017udp_1"
+    ip: '127.0.0.1'
+    port: 2112
+    send_interval: 10  # 设备发送间隔，一定要匹配，和数据解析有关，单位ms
+    save_natural_data: true #是否保存原始数据
+    channel_link_info: # channel : 0 - 7 总共8个通道 
+      - channel: 7
+        link_info: 'spot_0x'
+      - channel: 4
+        link_info: 'press0'
+  

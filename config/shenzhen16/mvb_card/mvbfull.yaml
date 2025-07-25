@@ -1,0 +1,41 @@
+# This is a YAML module configuration file
+# 如果使用字符串尽量使用'example',"example",单引号不支持转义符，双引号可以使用转义符
+# ======== 贵阳s1 ========  
+mvb_type: duagon           # mvb板卡 类型  1:duagon 
+comid: 42150
+softversion: 0x0100
+pmsversion: 0x1234
+msgtype: 0x5064
+station_file_path: nb8-gbk.csv
+read_config: #可以多组配置读
+  - port: 1        #端口号
+    size: 16       #读长度
+    interval: 64        # 时间间隔，单位ms
+  - port: 0x0188    #0xi88 i为车厢号
+    size: 32       #读长度
+    interval: 128        # 时间间隔，单位ms
+write_config: #可以多组配置写
+  - port: 0x01f7       #端口0xif7，i为车厢号，发送周s期1024ms，端口尺寸32Byte
+    size: 32      #写长度
+    interval: 1024         # 时间间隔，单位ms
+# ======== 贵阳s1 ========  
+
+# ======== 重庆环线 ========  
+# mvb_type: duagon           # mvb板卡 类型  1:duagon 
+# comid: 42150
+# softversion: 0x0100
+# pmsversion: 0x1234
+# msgtype: 0x5064
+# station_file_path: nb8-gbk.csv
+# read_config: #可以多组配置读
+#   - port: 0x0e        #列车号端口
+#     size: 16       #读长度
+#     interval: 1024        # 时间间隔，单位ms
+#   - port: 0x0f    #时间端口
+#     size: 16       #读长度
+#     interval: 512        # 时间间隔，单位ms
+#   - port: 0xd0    #车辆数据端口
+#     size: 32       #读长度
+#     interval: 128        # 时间间隔，单位ms
+# ======== 重庆环线 ========  
+  

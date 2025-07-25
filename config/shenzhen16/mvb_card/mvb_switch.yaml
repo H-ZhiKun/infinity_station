@@ -1,0 +1,20 @@
+# This is a YAML module configuration file
+# 如果使用字符串尽量使用'example',"example",单引号不支持转义符，双引号可以使用转义符
+# ======== 贵阳s1 超限和模块状态数据转发开关 ========  
+amif_send_config: # 超限数据转发配置
+  - temperature: 0        # 弓网接触线温度超限 0:不转发超限，1：转发超限
+    cat_off: 0       # 拉出值超限
+    cat_hei : 0        # 导高超限
+    arc: 0  # 燃弧超限
+    pan_structure: 0  # 受电弓结构超限
+    bow_system: 0  # 弓网系统
+    abrval: 0 # 弓网接触线磨耗值超限
+asat_send_config:   # 模块状态数据转发配置 0:不往司机室发送任何模块故障 1:往司机室正常发送模块状态
+  - geopar_mode: 0       # 拉出值导高测量模块
+    temperature_mode: 0  # 接触线温度测量模块
+    arc_mode: 0      # 燃弧模块
+    panto_mode: 0 # 受电弓结构模块
+    system_communication_mode: 0 # 系统通信模块
+    abrval_mode: 0 # 弓网接触线磨耗检测模块
+# ======== 贵阳s1 ========  
+

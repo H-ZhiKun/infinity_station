@@ -1,0 +1,18 @@
+
+OnlineTask:
+    - OnlineSubwayNum: 'S1011-2'
+      OnlineLineName: '贵阳地铁S1号线-上行'
+      OnlineDirection: '正向'
+      OnlineStartStation: '皂角坝'
+      OnlineStartPole: 'Y004-14'
+      OnlineEndStation: '望城坡'
+      IsOnlineTask: true
+      linedir: 1     #正向
+    - OnlineSubwayNum: 'S1011-2'
+      OnlineLineName: '贵阳地铁S1号线-下行'
+      OnlineDirection: '正向'
+      OnlineStartStation: '望城坡'
+      OnlineStartPole: 'Z213-21'
+      OnlineEndStation: '皂角坝'
+      IsOnlineTask: true
+      linedir: 0     #反向

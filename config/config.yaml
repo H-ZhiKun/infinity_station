@@ -1,0 +1,136 @@
+# This is a YAML module configuration file
+# 如果使用字符串尽量使用'example',"example",单引号不支持转义符，双引号可以使用转义符
+
+log: #require
+  root_path: 'd:/gwkj/log'  # 日志存放根目录。路径分隔使用/，路径不能包含空格和中文（平台通用）
+  max_counts: 30            # 日志文件最大保存个数，每天自动创建一个日志
+  log_level: debug          # 日志级别: trace, debug, info, warn, error
+  flush_level: error        # 日志刷新到文件级别: trace, debug, info, warn, error
+
+DatabaseManager: 
+  postgresql: # 数据库类型: postgresql, mysql 或 sqlite
+    driver: QPSQL
+    host: localhost  # 数据库主机地址: localhost(127.0.0.1)
+    port: 6543  # 数据库端口
+    db_name: 'integration'  # 数据库名
+    user: 'postgres'  # 用户名
+    csv_path: '/csv_to_sql_config/csv_to_sql.yaml'
+    #passwd：~postgres@
+  sqlite:
+    driver: QSQLITE
+    db_path: 'd:/gwkj/sqlite'  # sqlite根目录
+
+LocationService:  #定位程序的设计最大时速为100KM/H
+  location_type: 1             # 定位方式
+  refresh_rate: 5      # 定位刷新休眠(ms)
+  send_rate: 10    #发送位置信息的休眠(ms)
+  open_img_adjust: false
+  open_maoduan_adjust: false
+  open_rfid_adjust: true
+
+JiHeService:
+  jihe_type: 1
+  open_adjust: true  #打开向定位发送几何信息(用于定位校正)
+  adjust_refresh_time: 50  #向定位发送几何信息间隔(ms)
+  app_refresh_time: 50 # 向界面发送几何数据间隔(ms)
+
+CollectService:
+  config_path: '/collect_dev_config/collect_dev.yaml'  # 配置文件存放路径。路径分隔使用/，路径不能包含空格和中文（平台通用）
+  send_rate: 5000    #发送位置信息的频率(ms)
+  
+HardwareManager:
+  discription: "default"
+
+QmlPrivateEngine:
+  config_path: '/qml_config/qmlconfig.yaml'
+
+MVBDataSwitch:
+  config_path: '/mvb_card/mvb_switch.yaml'
+
+MVBMsgForward:
+
+MVBDistribution:
+  config_path: '/mvb_card/mvb.yaml'
+  
+CameraUser:
+  config_path: '/video_config/video.yaml'  # 配置文件存放路径。路径分隔使用/，路径不能包含空格和中文（平台通用）
+
+RadarService:
+  #radar_path: '/config/radar_config/YYradar.yaml'  # 雷达配置文件存放路径。路径分隔使用/，路径不能包含空格和中文（平台通用）
+  config_path: '/radar_config/radar.yaml'
+TaskService:
+  config_path: '/task_config/task.yaml'
+
+UdpCenter:
+  config_path: '/udp_center/udp_config.yaml'
+  
+ArcUVService:
+  config_path: '/arc_config/arcuv.yaml'
+
+ConnectivityService:
+  class_type: ConnectivityService # 模块入口类型
+  config_path: '/connectivity_config/connectivity_config.yaml' # 配置文件存放路径。路径分隔使用/，路径不能包含空格和中文（平台通用）
+
+RfidRecvService:
+  class_type: RfidRecvService
+  config_path: '/rfid_config/rfidconfig.yaml'
+
+LiveNvrService:
+  class_type: LiveNvrService
+  config_path: '/live_nvr_config/live_nvr_config.yaml'
+  
+RossekSeverService:
+  sever_port: 15888
+  client_count: 4
+  ip_0: '127.0.0.1' 
+  ip_1: '127.0.0.2' 
+  ip_2: '127.0.0.3' 
+  ip_3: '127.0.0.4'
+  name_0: '刚性1'
+  name_1: '刚性2' 
+  name_2: '刚性3' 
+  name_3: '刚性4'  
+
+DropTriggerServer:
+  config_path: '/drop_trigge_camera/camera_config.yaml'
+  modelFile: '/drop_trigge_camera/models_config/svm_linear.xml'
+  hogParamsFile: '/drop_trigge_camera/models_config/hog_params.txt'
+  labelMapFile: '/drop_trigge_camera/models_config/label_map.txt'
+
+NetcamService:
+  config_path: '/netcam_config/camera_config.yaml'
+
+TcpServerCenter:
+  config_path: '/tcp_server_center/server_config.yaml'
+
+TcpClientCenter:
+  config_path: '/tcp_client_center/client_init.yaml'
+
+BaumerManager:
+  config_path: '/camera_config/baumer/camera_info.yaml'  # 配置文件存放路径。路径分隔使用/，路径不能包含空格和中文（平台通用）
+
+HikManager:
+  config_path: '/camera_config/hik/camera_info.yaml'  # 配置文件存放路径。路径分隔使用/，路径不能包含空格和中文（平台通用）
+
+TemperatureService:
+  config_path: '/temperature_config/camera_config.yaml'
+
+HistroyProgramComm:
+  config_path: '/histroy_program_comm/communication.yaml'
+
+BaslerManager:
+  config_path: '/camera_config/basler/camera_info.yaml'
+
+YanYanDataCollect:
+  config_path: '/yanyan_data_collect/jcwconfig.ini'
+  save_raw_data: 1
+FileSysWatcher:
+  config_path: '/file_sys_watcher/watcher.yaml'  # 需要监控的文件夹路径
+
+Dispatch6017:
+  config_path: '/6017_config/6017.yaml'
+
+RemoteAccess:
+  config_path: '/remote_access/remote_access.yaml'
+
+DwcDataDispatch:

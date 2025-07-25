@@ -1,0 +1,4 @@
+basler_info:
+  - name: 'basler_1'  # 摄像头名称，必须唯一
+    sn: '123456789'   # 摄像头序列号
+    type: 'TRIGGER'   # 摄像头类型 

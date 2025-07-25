@@ -1,0 +1,1 @@
+主要用作吊弦触发(drop_trigger)

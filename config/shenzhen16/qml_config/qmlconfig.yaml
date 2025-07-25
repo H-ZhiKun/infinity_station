@@ -1,0 +1,58 @@
+#其中enabledModules包含：mvb_page->mvb界面 ,rfid_page ->RFID页面,egv_video_page ->视频界面
+#radar_page->雷达界面 , task_page->任务界面, egv_location_page ->定位界面,egv_inspectionimage_page ->巡检界面
+#egv_dropper_trigger_page->吊弦触发界面
+
+# ======== 贵阳s1 ========
+# qmlconfig:
+#   - display_page: "main.qml"  #显示加载的第一个界面
+#     enabledModules:           #启用的模块
+#       - system_status         #系统状态
+#       - mvb_page              #mvb界面  
+#       - rfid_page             #RFID页面
+#       - task_page             #任务界面
+#       - egv_video_page        #视频界面
+#       - egv_location_page    
+# ======== 贵阳s1 ========
+# # ======== 宁波八低配 ========
+# qmlconfig:
+#   - display_page: "main.qml"  #显示加载的第一个界面
+#     enabledModules:           #启用的模块
+#       - system_status         #系统状态
+#       - mvb_page              #mvb界面
+#       - rfid_page             #RFID页面
+#       - task_page             #任务界面
+#       - egv_video_page         #视频界面
+#       - egv_location_page    
+# # ======== 宁波八低配 ========
+# # ======== 太原s1 ========
+# qmlconfig:
+#   - display_page: "main.qml"  #显示加载的第一个界面
+#     enabledModules:           #启用的模块
+#       - task_page             #任务界面
+#       - radar_page
+# # ======== 太原s1 ========
+# ======== 上海4C ========
+# qmlconfig:
+#   - display_page: "main.qml"  #显示加载的第一个界面
+#     enabledModules:           #启用的模块
+#       - egv_inspectionimage_page       #巡检界面
+#       - egv_dropper_trigger_page       #吊弦触发界面  
+#       - egv_video_page         #视频界面
+#       - egv_location_page     #定位界面       
+# ======== 上海4C ========
+# ======== 深圳16 ========
+qmlconfig:
+  - display_page: "main.qml"  #显示加载的第一个界面
+    enabledModules:           #启用的模块
+      - rfid_page             #RFID页面
+      - egv_video_page         #视频界面
+      - egv_location_page      #定位界面
+# ======== 深圳16 ========
+# # ======== 长春3 ========
+# qmlconfig:
+#   - display_page: "rfid_page/rfid_page.qml"  #显示加载的第一个界面
+# # ======== 长春3 ========
+# ======== 配置修改器 ========
+# qmlconfig:
+#   - display_page: "ConfigEditorMain.qml"  #显示加载的第一个界面
+# ======== 配置修改器 ========

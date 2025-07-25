@@ -1,0 +1,11 @@
+ip: "0.0.0.0" 
+port: 12345
+max_connections: 100
+targets:
+ - client_title: "camera"
+   ip: "192.168.0.1"
+ - client_title: "xxx"
+   ip: "192.168.0.1"
+
+ # 目标客户端ip配置，当有新连接被监听到后，会在targets中查找配置是否存在，不存在不处理
+ # client_title标识在controller中定义使用，ip地址根据实际情况选择

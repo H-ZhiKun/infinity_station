@@ -1,0 +1,14 @@
+var CURRENT_VERSION = "@CURRENT_VERSION@";
+var GIT_BRANCH = "@GIT_BRANCH@";
+var GIT_COMMIT_HASH = "@GIT_COMMIT_HASH@";
+var COMPILE_TIME = "@COMPILE_TIME@";
+
+// 返回版本信息的对象
+function getVersionInfo() {
+    return {
+        version: CURRENT_VERSION,
+        branch: GIT_BRANCH,
+        commitHash: GIT_COMMIT_HASH,
+        compileTime: COMPILE_TIME
+    };
+}

@@ -1,0 +1,4 @@
+savepath: 'd:/gwkj/'
+stationfilepath : 'xxxxxx'
+linedatafilepath: 'qqqqqq'
+onlinetaskfilepath : '/config/task_config/onlinetask.yaml'

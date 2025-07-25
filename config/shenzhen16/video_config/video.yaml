@@ -1,0 +1,35 @@
+camera_info:
+  - camera_type: 'HIK'
+    camera_ip: '10.10.10.123'
+    camera_left: 1
+    camera_right: 1
+    camera_top: 1
+    camera_bottom: 1
+    camera_gain: 1
+    camera_exposure: 1
+    camera_fps: 25
+    camera_pixelformat: 1
+    camera_port: 8000
+    camera_pwd: 'Gwkj1234'
+    camera_username: 'admin'
+    camera_name: 'hik1'
+    isshow_img: 0
+    isshow_data: 0
+    save_img_type: 'jpg'
+    save_img_mod: 1
+    channel: 1
+    save_data_path: 'z:/video_capture'
+    save_img_path: 'z:/video_capture'
+    save_video_path: 'z:/video_capture'
+    save_video_type: 'mp4' 
+    is_cacheforvideo_save: true
+    cacheforvideo_timesize_before: 5
+    cacheforvideo_timesize_after: 5
+    is_color: false
+    gain_raw: 1
+    exposure_time: 1
+    pixel_format: ''
+    reverse_x: false
+    reverse_y: false
+    istrigger: false
+    triggermode: ''

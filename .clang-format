@@ -1,0 +1,120 @@
+# === 基础信息 ===
+Language: Cpp  # 设置编程语言为 C++
+BasedOnStyle: Microsoft  # 基于 Microsoft 样式
+ColumnLimit: 140  # 限制每行最大字符数为 150
+UseTab: Never  # 禁止使用 Tab 缩进，统一使用空格
+PointerAlignment: Right  # 指针对齐方式为右对齐
+ReflowComments: true  # 自动折行注释
+MaxEmptyLinesToKeep: 1  # 保持最多一个空行
+NamespaceIndentation: All  # 所有命名空间都进行缩进
+Cpp11BracedListStyle: true  # 启用 C++11 列表初始化风格
+
+# === 头文件排序设置 ===
+SortIncludes: false  # 禁用头文件自动排序
+
+# === 缩进与对齐规则 ===
+AccessModifierOffset: -2  # 访问修饰符（public、private 等）缩进偏移量为 -2
+AlignAfterOpenBracket: Align  # 括号后内容对齐
+AlignEscapedNewlines: Right  # 转义换行符右对齐
+AlignOperands: Align  # 运算符对齐
+ContinuationIndentWidth: 4  # 换行续行时的缩进宽度为 4
+ConstructorInitializerIndentWidth: 4  # 构造函数初始化列表的缩进宽度为 4
+
+# === 多行对齐规则 ===
+AlignTrailingComments:
+  Kind: Always  # 始终对齐尾部注释
+  OverEmptyLines: 0  # 不跨空行对齐注释
+
+AlignConsecutiveAssignments:
+  Enabled: false  # 禁用连续赋值对齐
+  AcrossEmptyLines: false  # 禁止跨空行对齐
+  AcrossComments: false  # 禁止跨注释对齐
+  AlignCompound: false  # 禁止复合对齐
+
+AlignConsecutiveBitFields:
+  Enabled: false  # 禁用连续位域对齐
+  AcrossEmptyLines: false  # 禁止跨空行对齐
+  AcrossComments: false  # 禁止跨注释对齐
+  AlignCompound: false  # 禁止复合对齐
+
+AlignConsecutiveDeclarations:
+  Enabled: false  # 禁用连续声明对齐
+  AcrossEmptyLines: false  # 禁止跨空行对齐
+  AcrossComments: false  # 禁止跨注释对齐
+  AlignCompound: false  # 禁止复合对齐
+
+AlignConsecutiveMacros:
+  Enabled: false  # 禁用连续宏定义对齐
+  AcrossEmptyLines: false  # 禁止跨空行对齐
+  AcrossComments: false  # 禁止跨注释对齐
+  AlignCompound: false  # 禁止复合对齐
+
+AlignConsecutiveShortCaseStatements:
+  Enabled: false  # 禁用连续短 case 语句对齐
+  AcrossEmptyLines: false  # 禁止跨空行对齐
+  AcrossComments: false  # 禁止跨注释对齐
+  AlignCaseColons: false  # 不对齐 case 标签的冒号
+
+# === 大括号换行规则 ===
+BreakBeforeBraces: Custom  # 自定义大括号换行规则
+BraceWrapping:
+  AfterCaseLabel: false  # case 标签后不换行
+  AfterClass: true  # class 后换行
+  AfterControlStatement: Always  # 控制语句（如 if、for）后总是换行
+  AfterEnum: true  # enum 后换行
+  AfterExternBlock: true  # extern "C" 块后换行
+  AfterFunction: true  # 函数定义后换行
+  AfterNamespace: true  # 命名空间后换行
+  AfterObjCDeclaration: true  # Objective-C 声明后换行
+  AfterStruct: true  # struct 后换行
+  AfterUnion: false  # union 后不换行
+  BeforeCatch: true  # catch 语句前换行
+  BeforeElse: true  # else 语句前换行
+  BeforeLambdaBody: false  # lambda 体前不换行
+  BeforeWhile: false  # while 语句前不换行
+  IndentBraces: false  # 大括号内部不额外缩进
+  SplitEmptyFunction: true  # 空函数体单独一行
+  SplitEmptyRecord: true  # 空结构体/类单独一行
+  SplitEmptyNamespace: true  # 空命名空间单独一行
+
+# === 换行控制 ===
+AllowAllArgumentsOnNextLine: true  # 允许所有参数换行
+AllowAllParametersOfDeclarationOnNextLine: true  # 允许所有声明参数换行
+
+AllowShortBlocksOnASingleLine: Never  # 禁止短代码块单行
+AllowShortCaseLabelsOnASingleLine: false  # 禁止短 case 标签单行
+AllowShortEnumsOnASingleLine: false  # 禁止短 enum 单行
+AllowShortFunctionsOnASingleLine: None  # 禁止短函数单行
+AllowShortIfStatementsOnASingleLine: Never  # 禁止短 if 语句单行
+AllowShortLambdasOnASingleLine: All  # 允许短 lambda 表达式单行
+AllowShortLoopsOnASingleLine: false  # 禁止短循环单行
+
+AlwaysBreakAfterDefinitionReturnType: None  # 函数定义返回类型后不强制换行
+AlwaysBreakAfterReturnType: None  # 返回类型后不强制换行
+AlwaysBreakBeforeMultilineStrings: false  # 仅当字符串过长才换行
+AlwaysBreakTemplateDeclarations: Yes  # 始终强制模板声明换行
+
+BreakArrays: true  # 数组元素超长时换行
+BreakStringLiterals: true  # 字符串常量过长时换行
+BreakBeforeBinaryOperators: None  # 不在二元运算符前换行
+BreakBeforeTernaryOperators: true  # 在三目运算符 ? : 前换行
+BreakBeforeConceptDeclarations: Always  # 总是强制 concept 声明前换行
+BreakBeforeInlineASMColon: OnlyMultiline  # 仅多行内联汇编时才换行冒号
+BreakConstructorInitializers: BeforeColon  # 构造函数初始化列表冒号前换行
+BreakInheritanceList: BeforeColon  # 继承列表冒号前换行
+
+BinPackArguments: false  # 禁止将函数参数压缩到一行
+BinPackParameters: false  # 禁止将函数声明参数压缩到一行
+
+# === 注释处理 ===
+CommentPragmas: '^ IWYU pragma:'  # 特定正则匹配的注释不折行
+BreakAfterAttributes: Never  # 属性注解后不强制换行
+BreakAfterJavaFieldAnnotations: false  # Java 字段注解后不换行
+
+# === 其他特殊处理 ===
+BitFieldColonSpacing: Both  # 位域冒号两边均有空格
+CompactNamespaces: false  # 不压缩命名空间
+
+# === 自定义属性宏 ===
+AttributeMacros:
+  - __capability  # 定义 __capability 为自定义属性宏

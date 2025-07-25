@@ -1,0 +1,17 @@
+
+
+  deviceip: '192.168.1.64'
+  deviceport: 8000
+  username: 'admin'
+  password: 'Gwkj1234'
+  channel: 1
+  rootpath: 'd:\'                        #文件存储路径
+  irdata:
+    alarmtemp1: 1                       #报警温度等级
+    alarmtemp2: 2                       #报警温度等级
+    alarmtemp3: 3                       #报警温度等级
+    maxtemperatrue: 2                   #最高温度校准
+    avgtemperatrue_coeff: 1.08            #最高温度校准  value * avgtemperatrue_coeff +  maxtemperatrue
+    limittime: 12                       #连续报警时间间隔
+    irtype: 1                           #获取温度类型 0 回调，1 全屏
+

@@ -1,0 +1,36 @@
+camera_info:
+  - camera_type: 'Basler'
+    camera_ip: 'BaslerTester'
+    serial_number: ''
+    camera_left: 1
+    camera_right: 1
+    camera_top: 1
+    camera_bottom: 1
+    camera_gain: 1
+    camera_exposure: 1
+    camera_fps: 4
+    camera_pixelformat: 1
+    camera_port: 8000
+    camera_pwd: 'Gwkj1234'
+    camera_username: 'admin'
+    camera_name: 'ffmpegusb1'
+    isshow_img: 0
+    isshow_data: 0
+    save_img_type: 'jpg'
+    save_img_mod: 1
+    channel: 1
+    save_data_path: 'd:/video_capture'
+    save_img_path: 'd:/video_capture'
+    save_video_path: 'd:/video_capture'
+    save_video_type: 'mp4' 
+    is_cacheforvideo_save: true
+    cacheforvideo_timesize_before: 5
+    cacheforvideo_timesize_after: 5
+    is_color: false
+    gain_raw: 1
+    exposure_time: 1
+    pixel_format: ''
+    reverse_x: false
+    reverse_y: false
+    istrigger: false
+    triggermode: ''

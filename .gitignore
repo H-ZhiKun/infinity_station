@@ -1,0 +1,55 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+#*.so
+#*.dylib
+#*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+#*.lai
+#*.la
+#*.a
+#*.lib
+
+# 忽略build目录
+.clangd
+.vscode
+.version
+res/version.js
+src/tis_res_cmake/
+src/tis_global/Function.h
+src/service/AppInnerTypes.h
+src/service/AppInterface.h
+src/service/AppModuleHelper.h
+src/kits/CMakeLists.txt
+src/kits/common/database/orm/OrmMapperImpl.h
+src/kits/common/database/orm/TableStructs.h
+src/kits/common/serialization/reflection_extension.h
+src/kits/common/qml_kits/QmlCommunication.h
+src/kits/common/invoke/Invoke_*.h
+src/kits/common/invoke/Invoke_*.cpp
+/build/
+/dist/
+/libs/
+/x64-windows-debug/
+/x64-windows-release/
+/x64-windows-relwithdebinfo/
+/.cache/
+/arm64-linux-/
+/arm64-linux/
+version.js

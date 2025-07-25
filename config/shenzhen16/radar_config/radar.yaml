@@ -1,0 +1,105 @@
+# 需要雷达对应角度，雷达index
+# 例如：雷达1角度0-180度，雷达2角度180-360度
+# SICK, YANYAN
+radar_info:
+  - type: 'YANYAN'
+    ip: '192.168.50.50'
+    port: 20001
+    device_index: 0
+    timeOut: 500
+    angle_start: 0
+    angle_end: 0
+    change_center_data:
+      change_x: 0
+      change_y: 0
+    skew_angle: 0
+  - type: 'YANYAN'
+    ip: '192.168.50.50'
+    port: 20002
+    device_index: 1
+    timeOut: 500
+    angle_start: 0
+    angle_end: 0
+    change_center_data:
+      change_x: 0
+      change_y: 0
+    skew_angle: 0
+  - type: 'YANYAN'
+    ip: '192.168.50.50'
+    port: 20003
+    device_index: 2
+    timeOut: 500
+    angle_start: 0
+    angle_end: 0
+    change_center_data:
+      change_x: 0
+      change_y: 0
+    skew_angle: 0
+  - type: 'YANYAN'
+    ip: '192.168.40.40'
+    port: 20001
+    device_index: 3
+    timeOut: 500
+    angle_start: 0
+    angle_end: 0
+    change_center_data:
+      change_x: 0
+      change_y: 0
+    skew_angle: 0
+  - type: 'YANYAN'
+    ip: '192.168.40.40'
+    port: 20002
+    device_index: 4
+    timeOut: 500
+    angle_start: 0
+    angle_end: 0
+    change_center_data:
+      change_x: 0
+      change_y: 0
+    skew_angle: 0
+  - type: 'YANYAN'
+    ip: '192.168.40.40'
+    port: 20003
+    device_index: 5
+    timeOut: 500
+    angle_start: 0
+    angle_end: 0
+    change_center_data:
+      change_x: 0
+      change_y: 0
+    skew_angle: 0
+    
+
+overrun_info:
+  - line_start: 1 # 这个数字代表的是linedata表的id
+    line_end: 268
+    point_info:
+    - x: 1000.0
+      y: 0.0
+    - x: 1000.0
+      y: 1000.0
+    - x: -1000.0
+      y: 1000.0
+    - x: -1000.0
+      y: 0.0
+  - line_start: 268
+    line_end: 500
+    point_info:
+    - x: 1000.0
+      y: 0.0
+    - x: 1000.0
+      y: 1000.0
+    - x: -1000.0
+      y: 1000.0
+    - x: -1000.0
+      y: 0.0
+
+
+skew_info:
+  distance: 400.0
+  angle_1: 0
+  angle_2: 0
+
+sqlRecord_interval: 20 # 数据库记录间隔单位ms
+
+

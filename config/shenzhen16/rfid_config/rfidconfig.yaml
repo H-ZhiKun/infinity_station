@@ -1,0 +1,26 @@
+#rfid_recv_type: 表示为标签阅读器的类型
+#tcpip: rfid标签阅读器的ip
+#tcpport: rfid标签阅读器的端口
+#udpip: 与定位程序通信的udp ip
+#udport: 与定位程序通信的udp 端口
+#csv_path: rfid标签配置文件的路径
+#saveNaturalData:是否保存原始数据
+#saveNaturalDataPath: 保存原始数据的库路径
+
+# # ======== 上海4C ========
+# rfidconfig:
+#   - rfid_recv_type: rfid_vfr61m    
+#     tcpip : 192.168.1.200
+#     tcpport : 100
+#     csv_path: './config/rfid_config/changchun3.csv'
+# # ======== 上海4C ========
+# ======== 长春3 ========
+rfidconfig:
+  - rfid_recv_type: rfid_vfr61m    
+    tcpip : 192.168.1.200
+    tcpport : 100
+    csv_path: './config/rfid_config/changchun3.csv'
+    TransmitFrequency: 100
+    saveNaturalData: false
+    saveNaturalDataPath: './naturalData/'
+# ======== 长春3 ========

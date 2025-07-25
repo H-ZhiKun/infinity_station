@@ -1,0 +1,14 @@
+#燃弧配置
+devices:
+  - type: "UV"                    #燃弧传感器类型
+    ip: "127.0.0.1"               #传感器ip
+    port: 9300                    #传感器端口 
+    threshold: 7.5                #燃弧阈值
+    devIndex: 0                   #设备索引
+  - type: "UV"
+    ip: "192.168.102.2"
+    port: 9300
+    threshold: 7.5
+    devIndex: 1
+
+  

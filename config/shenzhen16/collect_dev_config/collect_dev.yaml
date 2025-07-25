@@ -1,0 +1,26 @@
+
+
+#工程车需要采集的各种信息
+#温度
+temperature_info:
+  - type: 'xxx'
+    ip: '169.254.31.96'
+    port: 2112
+#湿度
+humidity_info:
+  - type: 'xxx'
+#网压
+voltage_info:
+  - type: 'xxx'
+#压力
+pressure_info:
+  - type: 'xxx'
+#振动
+vibration_info:
+  - type: 'xxx'
+#冲击
+concussion_info:
+  - type: 'xxx'
+#电流
+ele_info:
+  - type: 'xxx'

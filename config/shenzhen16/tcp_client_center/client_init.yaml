@@ -1,0 +1,16 @@
+# 多客户端配置组 提供给tcp_client_center模块统一配置使用
+
+# ======== mvb ======== 
+- client_title: mvb         # 新mvb与旧版mvb通信使用
+  ip: 127.0.0.1             # 服务端ip
+  port: 21100               # 服务端端口
+  reconnect_interval: 5000  # 重连间隔时间(ms)
+  # ======== mvb ======== 
+
+#==============shanghai4c 转发图像==================
+- client_title: filesystem         #贵阳mvb与旧版mvb通信使用
+  ip: 127.0.0.1             # 服务端ip
+  port: 21100               # 服务端端口
+  reconnect_interval: 5000  # 重连间隔时间(ms)
+
+#==============shanghai4c 转发图像==================

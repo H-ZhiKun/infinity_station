@@ -1,0 +1,7 @@
+#liveNVR登录信息
+
+live_nvr_info:
+  - live_nvr_ip: 192.168.1.100              # liveNVR地址
+    live_nvr_port: 8080                     # liveNVR端口
+    live_nvr_username: admin                # liveNVR用户名
+    live_nvr_password: <PASSWORD>           # liveNVR密码 

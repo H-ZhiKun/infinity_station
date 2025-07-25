@@ -1,0 +1,32 @@
+taskip: '10.10.10.250'                      #任务服务器IP
+taskport: 28889                             #任务服务器端口
+
+sql:
+  serviceip: '10.10.10.250'                 #数据库服务器ip
+  user: 'root'                              #数据库用户名
+  password: 'gwkj1001'                      #数据库密码
+
+jcdbserviceip: 10.10.20.161                 #JCDB服务器ip (定位程序)
+jcdbserviceport: 7771                       #JCDB服务器端口(定位程序)
+
+mvbrecieveip: 10.10.20.161                  #MVB接收程序ip
+mvbrecieveport: 7772                        #MVB接收程序端口
+
+asatmanagerserviceip: 10.10.20.161          #ASAT管理程序ip 
+asatmanagerserviceport: 7773                #ASAT管理程序端口 
+
+asatmvbserviceip: 10.10.20.161              #发送服务状态给mvb的ip
+asatmvbserviceport: 7774                    #发送服务状态给mvb的端口
+
+amifserviceip: 10.10.20.161                 #发送报警到mvb的ip
+amifserviceport: 7775                       #发送报警到mvb的端口
+
+uniqueidserverip: '10.10.20.161'       #ID分发服务器ip和端口
+uniqueidserverport: 21200              #ID分发服务器端口
+uniqueidlocalip: '10.10.20.161'        #接收ID分发的本地ip
+
+writearctableflag: false                   #燃弧是否写入数据库 
+writevideotableflag: false                 #视频是否写入数据库
+writeirtableflag: false                    #红外是否写入数据库  
+writepantotableflag: false                  #PAN是否写入数据库
+writepressandacctableflag: false             #压强和电表是否写入数据库

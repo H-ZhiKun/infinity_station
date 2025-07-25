@@ -1,0 +1,28 @@
+connect_info:   # 速度程序配置，可能是网口通信，也可能是串口通信
+  # 7404net:
+  #   speed_info:
+  #     - channel: 1
+  #     - channel: 2
+  #   do_info:
+  #     - channel: 1
+  #   ip: '10.10.10.135'
+  #   port: 8000
+  #   wheel_pulse: 200 # 一轮的脉冲数
+  #   wheel_diameter: 2.5132741 # 轮子周长 单位：米
+  #   time_interval: 20 # 计算间隔
+  #   simulation: true # 是否模拟数据
+  #   simulation_pulse_add: 500 # 模拟数据脉冲增加值 100ms增加脉冲
+  6051net:
+    speed_info:
+      - channel: 1
+      - channel: 2
+    ip: '127.0.0.1'
+    port: 502
+    wheel_pulse: 200 # 一轮的脉冲数
+    wheel_diameter: 2.638 # 轮子周长 单位：米
+    time_interval: 20 # 计算间隔
+    simulation: true # 是否模拟数据
+    simulation_pulse_add: 100 # 模拟数据脉冲增加值 100ms增加脉冲
+
+saveNaturalData: true
+saveNaturalDataPath: './naturalData/'

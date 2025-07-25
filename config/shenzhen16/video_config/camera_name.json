@@ -1,0 +1,21 @@
+{
+     "cameras": [
+         {
+             "id": 1,
+             "name": "camera1",
+             "position": "left",
+             "enabled": true
+         },
+         {
+             "id": 2,
+             "name": "camera2",
+             "position": "right",
+             "enabled": true
+         }
+         
+     ],
+     "layout": {
+         "columns": 2,
+         "spacing": 2
+     }
+ }

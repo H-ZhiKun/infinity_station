@@ -1,0 +1,5 @@
+csv_info:
+  - csv_path: 'csv_to_sql_config/csv_info/shenzheng16_down.csv'
+    table_name: 'line_data'
+  - csv_path: 'csv_to_sql_config/csv_info/shenzheng16_up.csv'
+    table_name: 'line_data'

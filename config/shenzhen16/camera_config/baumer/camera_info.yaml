@@ -1,0 +1,22 @@
+baumer_info:
+  - type: "NORMAL"
+    sn: "700008821694"
+    camera_name: "test_baumer"
+    camera_gain: 1                      # 增益 暂时不支持
+    camera_exposure: 1                  # 曝光 暂时不支持
+    camera_fps: 25                      # 帧率 暂时不支持
+    camera_roi: [ 0, 0, 1920, 1080 ]    # ROI区域，左上角和右下角坐标  暂时不支持
+  # - type: "ARC"
+  #   sn: "700008199150"
+  #   camera_name: "test_baumer1"
+  #   camera_gain: 1                      # 增益 暂时不支持
+  #   camera_exposure: 1                  # 曝光 暂时不支持
+  #   camera_fps: 25                      # 帧率 暂时不支持
+  #   camera_roi: [ 0, 0, 1920, 1080 ]    # ROI区域，左上角和右下角坐标  暂时不支持
+  # - type: "NORMAL"
+  #   sn: "700011911907"
+  #   camera_name: "test_baumer2"
+  #   camera_gain: 1                      # 增益 暂时不支持
+  #   camera_exposure: 1                  # 曝光 暂时不支持
+  #   camera_fps: 25                      # 帧率 暂时不支持
+  #   camera_roi: [ 0, 0, 1920, 1080 ]    # ROI区域，左上角和右下角坐标  暂时不支持
